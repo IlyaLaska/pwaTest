@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon"/>
+    <meta name="description" content="An intelligent day planner">
+    <meta name="theme-color" content="#2F3BA2"/>
+    <link rel="manifest" href="manifest.json">
+    <title>Metassist</title>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                console.log('Load event');
+                navigator.serviceWorker.register('/sw.js')
+                    .then((reg) => {
+                        console.log('Service worker registered.', reg);
+                    }, err => {
+                        console.log('Registration error: ', err);
+                    });
+            });
+        } else console.log("wTF");
+    </script>
+    <script>
+        console.log("head");
+        if ('serviceWorker' in navigator) console.log("true");
+        else console.log("false");
+    </script>
+</head>
+<body>
+
+<script>
+    console.log("body");
+    if ('serviceWorker' in navigator) console.log("true");
+    else console.log("false");
+</script>
+<h1>TEST</h1>
+</body>
+</html>

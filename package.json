@@ -1,0 +1,24 @@
+{
+  "name": "metassist",
+  "version": "1.0.0",
+  "description": "Intelligent planner",
+  "main": "index.js",
+  "dependencies": {
+    "fastify": "^2.10.0",
+    "pg": "^7.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IlyaLaska/metassist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IlyaLaska/metassist/issues"
+  },
+  "homepage": "https://github.com/IlyaLaska/metassist#readme"
+}
