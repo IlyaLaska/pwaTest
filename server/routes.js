@@ -81,6 +81,13 @@ async function routes (fastify, options) {
             else reply.headers({'Content-Type': 'text/html'}).status(200).send(file);
         });
     });
+    fastify.get('/favicon.ico', (request, reply) => {
+        fs.readFile('../images/favicon.ico', (err, file) => {
+            console.log(err);
+            if (err) reply.status(404).send("WTFFFFError");
+            else reply.headers({'Content-Type': 'image/x-icon'}).status(200).send(file);
+        });
+    });
 }
 
 

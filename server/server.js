@@ -6,10 +6,10 @@ const fs = require('fs');
 
 const fastify = require('fastify')({
     logger: true,
-    https: {
-        key: fs.readFileSync('./key.pem'),
-        cert: fs.readFileSync('./cert.pem')
-    }
+    // https: {
+    //     key: fs.readFileSync('./key.pem'),
+    //     cert: fs.readFileSync('./cert.pem')
+    // }
 });
 
 fastify.register(require('./routes.js'));
